@@ -18,21 +18,21 @@ Create an investment tool that will allow the user to predict the trends of real
 
 ## Data Cleaning Process 
 
-- we gathered data through an API using _Pandas DataReader_ with the data from **FRED** or _Federal Reserve Econommic Data_. This is where we find the *Case-Shiller* monthly index. At this point we decided to use the _ffill()_ method to see if the increse in data points were needed for an outcome. 
+- Gathered data through an API using _Pandas DataReader_ with the data from **FRED** or _Federal Reserve Econommic Data_. This is where you find the *Case-Shiller* monthly index. At this point decided to use the _ffill()_ method to see if the increse in data points were needed for an outcome. 
 - cleaned the Data by the normal process (ie. dropping na, removing null, column manipulation, etc.) then splitting up the data for testing and training.
 
 ## Data Analysis
 
-- We took the cleaned data and split data to get started for **Natural Language Processing** 
-  - NLP we used a few different methods here **WordCloud, Vader Sentiment Intensity Analyzer, PorterStemmer/ Lemmatizer**
-- After we took a look at the sentiments on _NLP_ we started our **Machine Learning**
-   - **ML** we used Naive Bayes and Logistic Regression 
+- took the cleaned data and split data to get started for **Natural Language Processing** 
+  - NLP used a few different methods here **WordCloud, Vader Sentiment Intensity Analyzer, PorterStemmer/ Lemmatizer**
+- After took a look at the sentiments on _NLP_ we started **Machine Learning**
+   - **ML** used Naive Bayes and Logistic Regression 
    - Naive bayes (https://machinelearningmastery.com/naive-bayes-for-machine-learning/) for a better understanding of now _Naive Bayes_ works.
 - Another method of **ML** is _Logistic Regression_ (https://www.ibm.com/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.)
-- Lastly for our _Data Analytics_ we used **Facebook Prophet** for Machine Learning on Index and Mortgage rates: SVM, ADABoostClassifier, Decision Tree Classifier, Passive Aggressive Classifier
+- Lastly for _Data Analytics_ used **Facebook Prophet** for Machine Learning on Index and Mortgage rates: SVM, ADABoostClassifier, Decision Tree Classifier, Passive Aggressive Classifier
 
 ## Professional Subjective Opinion
-Based on our findings using the ***Non-Biased (not ffill) Data Points*** we for told about a ***Market Crash*** in the coming **2023 Year**.
-Our findings were based on the ***Non-Biased (not ffill) Data Points***. First we did not understand why we got this, this point we had figured it was due to insufficent data points. This is where we used the _ffill_ to get more data point but with the increase of data points we had a more _biased_ data set. With the new dataset we had a total opposite outcome.
-**Mortage Rates** along with the ___Housing Prices___ have an inverse correlation as shown in the **NonBiased** data set. When __Mortgage Rates__ are high we can see that Housing prices are lower.
-There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states we see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark. Overall we group 2 see that there is going to be a correction this upcoming ***March of 2023*** 
+Based on the findings using the ***Non-Biased (not ffill) Data Points*** I for told a ***Market Crash*** in the coming **2023 Year**.
+Findings were based on the ***Non-Biased (not ffill) Data Points***. First did not understand why got this, this point I had figured it was due to insufficent data points. This is where I used the _ffill_ to get more data point but with the increase of data points had a more _biased_ data set. With the new dataset had a total opposite outcome.
+**Mortage Rates** along with the ___Housing Prices___ have an inverse correlation as shown in the **NonBiased** data set. When __Mortgage Rates__ are high you can see that Housing prices are lower.
+There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states you see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark. Overall you see that there is going to be a correction this upcoming ***March of 2023*** 
